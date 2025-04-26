@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Usando Flexbox no body para organizar o conteúdo principal */
+    flex-direction: column; /* Empilha os filhos verticalmente (header, main, footer) */
+    align-items: stretch; /* Estica os filhos para ocupar a largura total */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+header {
+    background-color: #f4f4f4; /* Mantendo a cor de fundo consistente */
+    padding: 20px;
+    display: flex; /* Flexbox para alinhar logo e navegação (se adicionarmos depois) */
+    align-items: center; /* Alinha verticalmente os itens do header */
+}
+
+.logo {
+    background-color: #2ecc71; /* Fundo verde para o logo */
+    color: #fff; /* Texto branco para o logo */
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px; /* Opcional: bordas arredondadas */
+    margin-right: auto; /* Empurra a logo para a esquerda se houver outros itens no header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Mantendo o menu oculto por enquanto */
+}
+
+main {
+    flex-grow: 1; /* Faz a main ocupar o espaço restante na tela */
+    padding: 40px;
+    display: flex; /* Flexbox para organizar título e texto explicativo */
+    max-width: 1200px; /* Largura máxima para o conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo principal na tela */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.hero-content-simplified {
+    display: flex; /* Flexbox para organizar subtítulo, título e explicação */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-right: 40px; /* Espaço entre o título/subtítulo e a explicação */
+    max-width: 40%; /* Largura máxima para o título e subtítulo */
+}
+
+.subtitle {
+    color: #777;
+    font-size: 0,8em;
+    margin-bottom: 5px;
+    text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.hero-content-simplified h1 {
+    color: #2ecc71;
+    font-size: 3em; /* Aumentei o tamanho do título */
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.1; /* Melhora a leitura de títulos grandes */
+    text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.hero-content-simplified p.explanation {
+    line-height: 1.2;
+    color: #555;
+    text-align: start ; /* Garante o alinhamento à esquerda */
+    max-width: 90%; /* Largura máxima para o texto explicativo */
+}
+
+.call-to-action {
+    display: block; /* Faz o botão ocupar a largura total do seu contêiner */
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centraliza o texto dentro do botão */
+    margin-top: 40px; /* Espaço acima do botão */
+}
+
+.call-to-action:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center; */
+    padding: 10px;
+    margin-top: auto; /* Empurra o footer para a parte inferior */
+    width: 100%;
+}
